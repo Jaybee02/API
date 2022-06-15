@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>API</title>
+</head>
+<body>
+    <div class="head">
+        <nav class="navbar navbar-expand-lg bg-primary">
+            <div class="container">
+                <a class="navbar-brand text-white" href="#">JAYBEE</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#">Contact</a>
+                    </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        
+    </div>
+
+    <div class="container py-5">
+
+        <div class="row">
+            <img src="img/j3.jpg" class="nat mt-3" alt="" style="width: 50%;">
+            <div class="col-sm-6 mb-3" id="jay">
+            <h1 class="mt-5 text-center">JSON-PLACEHOLDER API</h1>
+            <h6 class="ms-3 mt-4" style="opacity: 0.5;">JSON (JavaScript Object Notation) API is an application programming interface designed for lightweight data interchange (text-based data exchange format) between two computer applications operating on the same hardware device or between different computers in different geographical areas.</h6>
+            <label for="exampleFormControlInput1" class="form-label mt-3 ms-3">Card Title</label>
+            <input type="email" class="form-control mb-3 ms-3" id="exampleFormControlInput1" placeholder="Enter a title">
+                
+            <label for="exampleFormControlTextarea1" class="form-label ms-3">Card Body</label>
+            <textarea class="form-control ms-3" id="exampleFormControlTextarea1" rows="4"placeholder="Fill in the body......."></textarea>
+            <div class="mimi d-flex justify-content-between">
+                <button title="button" id="btn" class="btn btn-primary mt-4 mb-4 mx-auto">Get Post
+                </button>
+                <button title="button" id="add_btn2" onclick="New()" class="btn btn-primary mt-4 mb-4 mx-auto">Create Post
+                </button>
+                
+            </div>
+
+            <!-- <div class="col" id="jay">
+                <div class="card col-lg-4 col-md-6 m-1 mx-auto mb-5">
+                    <img src="..." class="card-img-top" alt="...">
+
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text"></p>
+                        <div class="card-footer justify-content-between">
+                            <button type="button" onclick="Update()" class="btn btn-primary">Update</button>
+                            <button type="button" class="btn btn-secondary">View</button>
+                            <button type="button" class="btn btn-danger">Delete</button>
+                        </div>
+                    
+                    </div>
+                    
+                </div>
+            </div> -->
+        </div>  
+        </div>  
+    
+    </div>
+   
+    <footer>
+        <div class="containers">
+          <div class="main-footer flex-sn">
+            <div class="nav-bar">
+                <a class="navbar-brand " href="#">JAYBEE</a>
+            </div>
+            <div class="list-bar flex-sn">
+              <div class="list-order">
+                <ul>
+                  <li>Home</li>
+                   <li>About us</li>
+                   <li>Contact</li>
+                </ul>
+              </div>
+              <div class="assistance">
+                <div class="logo-ass">
+                  <p class="gs">@ Copyright Jaybee 2022</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
