@@ -1,6 +1,6 @@
 *{
-    margin: auto;
-    padding: auto;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 body{
@@ -14,6 +14,7 @@ body{
 
 .card{
     position: static;
+    
 }
 
 .nat{
@@ -28,12 +29,12 @@ body{
     justify-content: center;
     align-items:center;
     padding: 20px 5px;
-}
+  }
   
-.list-bar{
+  .list-bar{
     display:flex;
     align-items:center;
-    }
+  }
   
   .list-order ul{
     display:flex;
@@ -48,23 +49,22 @@ body{
   
   .list-order ul,li{
     margin-right:20px;
-}
+  }
+  
+  .assistance{
+    display:flex;
+    padding-left:20px;
+  }
 
 @media(min-width:320px) and (max-width:426px){
-     body{
-        margin: 0;
-        padding: 0;
-        width: 100% !important;
-        height: 100% !important;
-        overflow-x: hidden;
-        /* overflow: hidden; */
-    }
-    /*
     .nat{
         width:100% !important;
-    } */
+    }
     .list-order{
         display: none;
+    }
+    .card{
+        width:100% !important
     }
 }
     /* tablet */
@@ -72,5 +72,8 @@ body{
 @media (min-width:481px) and (max-width:768px){
     .nat{
         width:100% !important;
+    }
+    .card{
+        width:100% !important
     }
 }  

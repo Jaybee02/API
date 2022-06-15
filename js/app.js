@@ -11,10 +11,10 @@ function getPost(){
         return resp.json();
     })
     .then((post)=>{
-        for (let k=0; k < 99; k++){
+        for (let k=0; k < 33; k++){
             console.log(post)
             jay.innerHTML+=`
-                <div class="card col-lg-4 col-md-6 m-1 mx-auto mb-5"style="width: 21rem;">
+                <div class="card col-lg-4 col-md-4 m-1 mx-auto mb-5"style="width: 21rem;">
                     <img src="${post[store].thumbnailUrl}" class="card-img-top" alt="...">
 
                     <div class="card-body">
@@ -23,8 +23,8 @@ function getPost(){
                     </div>
 
                     <div class="card-footer justify-content-between">
-                        <button type="button" class="btn btn-primary">Update</button>
-                        <button type="button" class="btn btn-secondary">View</button>
+                        <button type="button" class="btn btn-primary ms-2">Update</button>
+                        <button type="button" class="btn btn-secondary me-2 ms-3">View</button>
                         <button type="button" class="btn btn-danger">Delete</button>
                     </div>
                    
@@ -72,8 +72,8 @@ function New(e) {
                     </div>
 
                     <div class="card-footer justify-content-between">
-                        <button type="button" class="btn btn-primary">Update</button>
-                        <button type="button" class="btn btn-secondary">View</button>
+                        <button type="button" class="btn btn-primary ms-2">Update</button>
+                        <button type="button" class="btn btn-secondary ms-3 me-2">View</button>
                         <button type="button" class="btn btn-danger">Delete</button>
                     </div>
                    
@@ -119,8 +119,8 @@ function Update() {
                     </div>
 
                     <div class="card-footer justify-content-between">
-                        <button type="button" onclick="Update()" class="btn btn-primary">Update</button>
-                        <button type="button" class="btn btn-secondary">View</button>
+                        <button type="button" onclick="Update()" class="btn btn-primary ms-2">Update</button>
+                        <button type="button" class="btn btn-secondary ms-3 me-2">View</button>
                         <button type="button" class="btn btn-danger">Delete</button>
                     </div>
                    
